@@ -1,0 +1,181 @@
+/* fonts*/
+@font-face {
+  font-family: 'Overpass';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/overpass/v12/qFda35WCmI96Ajtm83upeyoaX6QPnlo6_PPrOQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Overpass';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/overpass/v12/qFda35WCmI96Ajtm83upeyoaX6QPnlo6G_TrOQ.ttf) format('truetype');
+}
+/* COLOR */
+* {
+  padding: 0;
+  margin: 0;
+}
+html {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  color: white;
+}
+.background {
+  display: grid;
+  place-content: center;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: hsl(216, 12%, 8%);
+}
+.hide {
+  display: none !important;
+}
+h2 {
+  font-family: 'Overpass', sans-serif;
+  font-weight: 700;
+}
+p {
+  font-family: 'Overpass', sans-serif;
+  font-weight: 400;
+  color: hsl(216, 12%, 54%);
+}
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-family: 'Overpass', sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+button:hover,
+button:focus {
+  background-color: white;
+  color: hsl(25, 97%, 53%);
+}
+.wrapper {
+  height: 400px;
+  width: 400px;
+  background-color: #212832;
+  border-radius: 25px;
+  box-sizing: border-box;
+  padding: 30px;
+}
+.wrapper .icon-container {
+  display: grid;
+  place-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #232F3B;
+}
+.wrapper h2 {
+  margin-top: 30px;
+}
+.wrapper p {
+  margin-top: 10px;
+  line-height: 1.3;
+}
+.wrapper .checkbox-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 6%;
+  justify-content: center;
+  margin-top: 30px;
+}
+.wrapper .checkbox-container button {
+  margin-top: 30px;
+}
+.wrapper .fakebutton {
+  position: relative;
+  display: grid;
+  place-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #232F3B;
+}
+.wrapper .fakebutton:hover,
+.wrapper .fakebutton:focus {
+  background-color: hsl(25, 97%, 53%);
+}
+.wrapper .fakebutton:hover span,
+.wrapper .fakebutton:focus span {
+  color: white;
+}
+.wrapper .fakebutton span {
+  display: grid;
+  place-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-family: 'Overpass', sans-serif;
+  font-weight: 700;
+  color: hsl(216, 12%, 54%);
+}
+.wrapper .fakebutton input {
+  display: none;
+}
+.wrapper .fakebutton input:checked + span {
+  background-color: hsl(216, 12%, 54%);
+  color: white !important;
+}
+.wrapper .thank-you {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wrapper .thank-you svg {
+  margin-top: 15px;
+}
+.wrapper .thank-you .user-rating {
+  color: hsl(25, 97%, 53%);
+  background-color: #232F3B;
+  margin-top: 30px;
+  padding: 10px 25px;
+  border-radius: 25px;
+}
+.wrapper .thank-you p {
+  text-align: center;
+}
+.wrapper fieldset {
+  border: none;
+}
+.wrapper .alert {
+  text-align: center;
+  font-family: 'Overpass', sans-serif;
+  font-weight: 700;
+  color: #c0001a;
+  padding: 2px;
+}
+@media screen and (max-width: 420px) {
+  .wrapper {
+    width: 350px;
+    height: 400px;
+  }
+  .rating-state-start .checkbox-container {
+    column-gap: 15px;
+  }
+  .rating-state-start .fakebutton {
+    width: 45px;
+    height: 45px;
+  }
+  .rating-state-start .fakebutton span {
+    width: 45px;
+    height: 45px;
+  }
+}
