@@ -14,8 +14,6 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 - [Author](#author)
 
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -34,7 +32,6 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
 
@@ -49,8 +46,6 @@ Users should be able to:
 - [CSS documentation](https://developer.mozilla.org/en-US/docs/Web/CSS) - I feel like you can find all what you need here.
 - [HTML documentation](https://developer.mozilla.org/en-US/docs/Web/HTML)
 
-
-## Author
 
 ## Author
 
